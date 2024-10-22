@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg text-white text-uppercase fs-7 ls-1 align-items-center">
+  <div class="container-fluid">
+    <div class="row align-items-center w-100">
+      <div class="col-8 col-md-3">
+        <a class="navbar-brand" href="/">
+          <img src="images/Django-Store.svg" width="204" height="46" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="col-1 col-md-6 d-md-flex justify-content-center">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-3">
+              <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/shop">Tienda</a></li>
+              <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="/about">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 col-md-3 d-flex justify-content-end">
+        <ul class="list-unstyled d-flex align-items-center gap-3 m-0">
+          <li>
+            <a href="/wishlist" class="text-white">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a href="/cart" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+            </a>
+          </li>
+          <!-- Ícono de Usuario con Modal -->
+          <li>
+            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#profileModal">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal de Perfil -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-black text-white rounded-3">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="profileModalLabel">Bienvenido</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <a href="/account/login" class="btn btn-outline-light w-100 mb-3">Iniciar Sesión</a>
+        <a href="/account/register" class="btn btn-light w-100">Regístrate</a>
+      </div>
+    </div>
+  </div>
+</div>

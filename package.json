@@ -1,0 +1,22 @@
+{
+  "name": "electrostore-gadget-shop-template",
+  "version": "1.0.0",
+  "description": "Tienda de gadgets con Express.js y Pug",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  }
+}
