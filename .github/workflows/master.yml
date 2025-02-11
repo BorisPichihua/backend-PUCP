@@ -1,7 +1,7 @@
 name: Deploy to EC2
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
         echo "Current directory: $(pwd)"
         echo "Listing home directory:"
         ls -la ~
-        BRANCH="master"
+        BRANCH="main"
         REPO_DIR="$HOME/ubuntu/backend-PUCP"
         echo "Installing PM2..."
         if ! command -v pm2 &> /dev/null; then
